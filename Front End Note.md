@@ -4,8 +4,30 @@
 - [Standard Use Row and Column in Bootstrap](#Standard-Use-Row-and-Column-in-Bootstrap)
 - [Padding and Margin](#Padding-and-Margin)
 
+-----------------
+<br/>
+
 ## Structure Standard CEO in the Front-End
+- Meta tags are used to provide information about the webpage to search engines and social media platforms. They are placed in the `<head>` section of the HTML document and can include information such as the title, description, keywords, and author of the webpage. Meta tags can also be used to control how search engines index the webpage and how it is displayed in search results.
+- Structure standard CEO is a standard structure for HTML documents that is used to improve SEO and user experience. It consists of the following tags:
+
 ```html
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Learn SCSS for Beginners</title>
+
+    <meta name="description" content="Complete SCSS tutorial for frontend developers.">
+
+    <meta name="robots" content="index, follow">
+
+    <meta property="og:title" content="Learn SCSS for Beginners">
+    <meta property="og:description" content="Complete SCSS tutorial">
+    <meta property="og:image" content="image.jpg">
+    <meta property="og:url" content="https://example.com">
+</head>
+
 <body>
 
 <header>
@@ -74,7 +96,9 @@ Meaning of tags:
 | Footer  | Footer of page, usually contains info of page    |
 
 
-#
+-----------------
+<br/>
+
 ## Standard Use Row and Column in Bootstrap
 
 
@@ -111,7 +135,9 @@ Rules:
 "Style is Css"
 ```
 
-#
+-----------------
+<br/>
+
 ## Padding and Margin
 - Padding is the space between the content and the border of the element
 - Margin is the space between the element and other elements
