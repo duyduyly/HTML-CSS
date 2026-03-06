@@ -56,6 +56,134 @@ body{
 }
 ```
 
+### how to make name for variable?
+- Use lowercase letters and hyphens to separate words (e.g., `$primary-color`, `$font-size`).
+
+Example:
+```scss
+$color-primary: #1a73e8;
+$font-size-body: 14px;
+$spacing-md: 20px;
+```
+
+#
+
+- Organize variables by category (e.g., colors, typography, spacing) and group them together in your stylesheet.
+- 4 main categories of variables:
+
+#### 1. Color variables
+```scss
+$color-primary: #1a73e8; #define primary color in design
+$color-secondary: #ff6b6b;
+
+$color-text-primary: #222; #define primary text color in design
+$color-text-secondary: #666;
+
+$color-border: #e5e5e5; #define border color in design
+
+$color-background: #ffffff; #define background color in design
+
+
+or
+
+$colors: (
+  primary: #0d6efd,
+  secondary: #6c757d,
+  success: #198754,
+  danger: #dc3545
+);
+```
+
+#
+
+#### 2. Typography variables
+
+```scss
+$font-primary: "Lato", sans-serif; #define primary font family in design
+
+$font-size-xs: 12px;
+$font-size-sm: 14px; #define small font size in design
+$font-size-md: 16px;
+$font-size-lg: 20px;
+$font-size-xl: 24px;
+
+$font-weight-regular: 400; #define regular font weight in design
+$font-weight-medium: 500;
+$font-weight-bold: 700;
+
+# use map variable for font weights
+#option
+$font-weights: (
+    regular: 400,
+    medium: 500,
+    bold: 700
+);
+
+```
+
+#
+
+#### 3.Spacing variables
+
+```scss
+$spacing-xs: 8px;
+$spacing-sm: 16px;
+$spacing-md: 24px;
+$spacing-lg: 32px;
+$spacing-xl: 48px;
+```
+
+#### 4.layout variables
+
+```scss
+$container-width: 1200px;
+
+$border-radius-sm: 4px;
+$border-radius-md: 8px;
+$border-radius-lg: 16px;
+```
+
+#
+
+#### When to use variables and when use map variable?
+- Map variables:
+  - use when a lot of same type of variable (e.g., colors, font sizes, spacing) and you want to organize them in a structured way.
+  - if 3 value same type, use map variable, if 2 value same type, use normal variable.
+  - 
+  - 
+- best practice Combine map with function: 
+```scss
+$colors: (
+  primary: #0d6efd,
+  secondary: #6c757d,
+  danger: #dc3545
+);
+
+@function color($name) {
+  @return map-get($colors, $name);
+} 
+
+.button {
+  background: color(primary);
+}
+```
+
+##### Summary
+```text
+SCSS variable rule
+
+variable
+→ single value
+→ global config
+
+map
+→ group values
+→ design system
+→ colors
+→ spacing
+→ font sizes
+```
+
 -----------------------
 <br/>
 
