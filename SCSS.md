@@ -6,7 +6,7 @@
 - [Selector](#Selector)
 - [Mixin](#Mixin)
 - [Flow Control](#Flow-Control)
-- [Partial and Import](#Partial-and-Import)
+- [Partial and @Import, @Use](#partial-and-import-use)
 - [Functions](#Functions)
 - [Math Operations](#Math-Operations)
 - [Learn more](#Learn-more)
@@ -391,7 +391,7 @@ $i: 1;
 -----------------------
 <br/>
 
-## Partial and Import
+## Partial and @Import, @Use
 - Partials are SCSS files that start with an underscore (`_`) and are meant to be imported into other SCSS files. They are not compiled into CSS on their own.
 - To import a partial, you use the `@import` directive followed by the name of the partial without the underscore and file extension.
 - SCSS partials is files that start with an underscore (`_`) (`_variables`, `_mixin`).
