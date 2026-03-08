@@ -153,14 +153,18 @@ $border-radius-lg: 16px;
   - 
 - best practice Combine map with function: 
 ```scss
+@use "sass:map"; 
+
 $colors: (
   primary: #0d6efd,
   secondary: #6c757d,
   danger: #dc3545
 );
 
+
+
 @function color($name) {
-  @return map-get($colors, $name);
+  @return map.get($colors, $name);
 } 
 
 .button {
